@@ -1,0 +1,29 @@
+22:28:52.560 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente: Randal Thomas con rut 29916399 comienza la compra.
+22:28:54.562 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente ha escogido los siguientes productos: 
+22:28:54.806 [main] INFO  cl.ucn.comercio.presentacion.App - Celulares con marca: apple y oppo
+22:28:56.807 [main] INFO  cl.ucn.comercio.presentacion.App - Verificamos la lista de proveedores y a quien pertenecen los productos escogidos: 
+22:28:56.815 [main] INFO  cl.ucn.comercio.presentacion.App - Nombre: ACME Rut: 739872042
+22:28:56.820 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 1 es ACME
+22:28:56.821 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 2 es ACME
+22:28:58.821 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea el carro de compras con los productos escogidos. 
+22:28:58.821 [main] INFO  cl.ucn.comercio.presentacion.App - Fecha: 28/09/2025 22:28:58
+22:28:58.823 [main] INFO  cl.ucn.comercio.presentacion.App - Se asocia el carro de compra al cliente. 
+22:28:58.987 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea una orden de compra y se confirma la compra 
+22:28:59.143 [main] INFO  cl.ucn.comercio.presentacion.App - Se persisten los datos de cliente 
+22:29:01.366 [main] INFO  cl.ucn.comercio.presentacion.App - El status de la orden cambia a enviado 
+22:29:03.540 [main] INFO  cl.ucn.comercio.presentacion.App - El status de la orden cambia a entregado 
+22:38:23.606 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente: Randal Thomas con rut 29916399 comienza la compra.
+22:38:25.609 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente ha escogido los siguientes productos: 
+22:38:25.886 [main] INFO  cl.ucn.comercio.presentacion.App - Celulares con marca: apple y oppo
+22:38:27.886 [main] INFO  cl.ucn.comercio.presentacion.App - Verificamos la lista de proveedores y a quien pertenecen los productos escogidos: 
+22:38:27.895 [main] INFO  cl.ucn.comercio.presentacion.App - Nombre: ACME Rut: 739872042
+22:38:27.901 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 1 es ACME
+22:38:27.901 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 2 es ACME
+22:38:29.901 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea el carro de compras con los productos escogidos. 
+22:38:29.902 [main] INFO  cl.ucn.comercio.presentacion.App - Fecha: 28/09/2025 22:38:29
+22:38:29.904 [main] INFO  cl.ucn.comercio.presentacion.App - Se asocia el carro de compra al cliente. 
+22:38:30.070 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea una orden de compra y se confirma la compra 
+22:38:30.214 [main] INFO  cl.ucn.comercio.presentacion.App - Se persisten los datos de cliente 
+22:38:32.426 [main] INFO  cl.ucn.comercio.presentacion.App - El status de la orden cambia a enviado 
+22:38:34.600 [main] INFO  cl.ucn.comercio.presentacion.App - El status de la orden cambia a entregado 
+22:41:16.990 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente: Randal Thomas con rut 29916399 comienza la compra.
