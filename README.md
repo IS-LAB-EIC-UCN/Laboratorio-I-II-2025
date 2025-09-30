@@ -19,3 +19,54 @@ Por lo tanto, se le ha encomendado la tarea de mejorarlo, utilizando el **patró
 
 ![Diagrama de Clases!](1.png "Diagrama de Clases")
 
+---
+
+# Solución
+
+## 📌 Versión Original
+
+- Existía una sola clase `Proveedor` que contenía lógica para diferentes proveedores (Acme, Afel, PCFactory).
+- Cada método estaba especializado, por ejemplo:
+    - `getAcmeCelularesMarca(...)`
+    - `getAfelCelularTamanho(...)`
+    - `getPCFactoryCelularAnho(...)`
+- Los clientes del sistema debían **conocer qué método específico invocar**, dependiendo del proveedor.
+
+**Problemas:**
+- **Alta dependencia:** el cliente está fuertemente acoplado a las clases concretas.
+- **Baja cohesión:** una clase con múltiples responsabilidades.
+- **Dificultad de extensión:** agregar un nuevo proveedor implica modificar la clase existente.
+
+---
+
+## 📌 Versión Refactorada
+
+La versión refactorada introduce varias mejoras estructurales:
+
+1. **División en proveedores concretos**
+    - Ahora existen `ProveedorAcme`, `ProveedorAfel` y `ProveedorPCFactory`.
+    - Cada clase se encarga de su propia lógica de consulta.
+
+2. **Interfaz común: `Adaptador`**
+    - Define un método genérico:
+      ```java
+      List<Celular> getCelulares(String marca, int anho, int pulgadas);
+      ```
+    - Los clientes solo necesitan esta interfaz para trabajar con cualquier proveedor.
+
+3. **Patrón Adapter**
+    - Clases como `AdaptadorProveedorAcme` implementan la interfaz y traducen la llamada unificada al método concreto del proveedor.
+    - Para agregar un nuevo proveedor, basta con crear:
+        - La clase del nuevo proveedor.
+        - Su correspondiente adaptador.
+
+4. **Organización por paquetes**
+    - `modelo`: define las entidades (ej. `Celular`).
+    - `presentacion`: contiene la aplicación principal.
+    - `adapter`: concentra las implementaciones del patrón Adapter.
+
+---
+
+## 🚀 Beneficios del Refactor
+
+- **Single Responsibility Principle (SRP):** cada clase cumple un único propósito.

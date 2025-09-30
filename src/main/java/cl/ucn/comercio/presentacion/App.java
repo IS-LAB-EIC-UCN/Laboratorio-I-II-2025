@@ -48,10 +48,10 @@ public class App
         logger.info("Celulares con marca: " + p1.getMarca() + " y " + p2.getMarca());
         Thread.sleep(2000);
         logger.info("Verificamos la lista de proveedores y a quien pertenecen los productos escogidos: ");
-        jpql = "SELECT p from Proveedor p";
-        TypedQuery<Proveedor> query3 = em.createQuery(jpql, Proveedor.class);
-        List<Proveedor> listaProveedor = query3.getResultList();
-        for (Proveedor proveedor : listaProveedor)
+        jpql = "SELECT p from ProveedorAcme p";
+        TypedQuery<ProveedorAcme> query3 = em.createQuery(jpql, ProveedorAcme.class);
+        List<ProveedorAcme> listaProveedor = query3.getResultList();
+        for (ProveedorAcme proveedor : listaProveedor)
         {
             logger.info("Nombre: " + proveedor.getNombre() + " Rut: " + proveedor.getRutProveedor());
             List<Producto> listaProducto1 = proveedor.getAcmeCelularesMarca(p1.getMarca());
